@@ -80,6 +80,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
+
 
 /* Text styles */
 
@@ -109,6 +113,11 @@ p {
     font-weight: 400;
     text-align: center;    
   }  
+ 
+  .button:hover {
+    background-color: var(--orange-light);
+    color: var(--orange-dark);
+  }
 
   #donate_button {
     margin-left: 85%; 
@@ -122,8 +131,12 @@ p {
 
   #volunteer {
     background-color: var(--white);
-    color: var(--orange-dark);
-    
+    color: var(--orange-dark);    
+  }
+  
+  #volunteer:hover {
+    background-color: var(--orange-dark);
+    color: var(--white);
   }
     
 
