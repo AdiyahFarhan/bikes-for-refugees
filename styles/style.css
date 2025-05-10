@@ -56,6 +56,9 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  position: relative;  
+  top: 50px;
+  left: 70px;
 }
 
 /* Navigation */
@@ -104,8 +107,14 @@ p {
     border-radius: 4px;
     text-decoration: none;
     font-weight: 400;
-    text-align: center;
+    text-align: center;    
   }  
+
+  #donate_button {
+    margin-left: 85%; 
+    top: -2rem;    
+    position: relative;  
+  }
   
   #donate_a_bike {
     margin-left: 4%;
@@ -179,6 +188,8 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-right: 2rem;
+  
 }
 
 .heading-underline:before {
@@ -196,7 +207,21 @@ p {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;  
+  padding: 1rem;
+  border: 1px solid var(--grey-light);
+  display: flex;
+  font-size: 14px;
+}
+.articles {
+  display: flex; 
+  margin-right: 1rem;   
+}
+
+.articles > article {
+  border: 1px solid var(--grey-light); 
+  margin-right: 1rem;
+  padding: 1rem;
 }
 
 .article__title {
@@ -217,7 +242,8 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width: 5rem;  
+  margin-right: 2rem;
 }
 
 .article__read-more {
@@ -243,6 +269,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
